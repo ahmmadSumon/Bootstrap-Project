@@ -72,7 +72,7 @@ nav .main-menu .close-menu,
     left: 0;
     z-index: 10;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background: #000;
     transition: top 1s ease;
@@ -173,6 +173,9 @@ overflow: hidden;
   padding: 10px;
   border-radius: 10px;
   transition: all .5s ease;
+}
+.hero-left .middle .middle-in   h5{
+  margin-top: 8px;
 }
 .hero-left .middle .middle-in:hover{
   background-color: #f55;
@@ -276,7 +279,7 @@ overflow: hidden;
   color: #000;
   font-size: 18px;
   text-transform: capitalize;
-
+  margin-top: 7px;
   font-weight: 500;
 }
 .choose-left {
@@ -311,9 +314,11 @@ overflow: hidden;
   font-weight: 600;
   line-height: 48px;
   padding-bottom: 10px;
+  
 }
 .choose-down {
   display: flex;
+ 
   flex-direction: column;
   gap: 20px;
 }
@@ -325,6 +330,7 @@ overflow: hidden;
   font-weight: 600;
   line-height: 48px;
   padding-bottom: 10px;
+  margin-top: 10px;
 }
 .choose-right {
   position: relative;
@@ -338,6 +344,7 @@ overflow: hidden;
 
 .customized-right {
   display: flex;
+
   flex-direction: column;
   padding-top: 7vw;
   gap: 20px;
@@ -361,6 +368,7 @@ overflow: hidden;
   font-weight: 600;
   line-height: 48px;
   padding-bottom: 10px;
+  margin-top: 12px;
 }
 .testimonial {
   display: flex;
@@ -527,6 +535,8 @@ transform: scale(.9);
   margin-bottom: 7vw;
   width: 1090px;
   height: 508px;
+ 
+  
 }
 .download-app {
   display: flex;
@@ -569,7 +579,7 @@ transform: scale(.9);
   max-width: 220px;
 }
 .download-app button:hover {
-  transform: scale(1.1);
+  transform: scale(.9);
 }
 .footer{
   
@@ -594,6 +604,7 @@ transform: scale(.9);
 .col-2 .logo{
   display: flex;
   gap: 20px;
+  margin-bottom: 10px;
 
 }
 .col-2 h3{
@@ -618,16 +629,22 @@ transform: scale(.9);
 .mail{
   margin-top: 2vw;
   opacity: .7;
+  border: 1px solid #222;
+}
+.mail input{
+  padding-left: 8px;
+  outline: none;
+  width: 100%;
 }
 .footer .button{
   margin-top: 5vw;
 }
 .footer h5{
-  transition: all .5s ease-in-out;
+  transition: all .5s ease-in;
   text-transform: capitalize;
 }
 .footer h5:hover{
-transform: scale(1.1);
+transform: scale(.9);
 cursor: pointer;
 color: #f55;
 }
